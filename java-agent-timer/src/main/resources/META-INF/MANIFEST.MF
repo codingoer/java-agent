@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Implementation-Title: java-gent-timer
+Implementation-Version: 1.0
+Premain-Class: top.codingoer.timer.AgentTimer
