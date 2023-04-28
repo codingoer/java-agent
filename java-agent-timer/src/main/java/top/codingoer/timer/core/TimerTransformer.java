@@ -37,7 +37,7 @@ public class TimerTransformer implements ClassFileTransformer {
             //第四步：返回修改后的字节码流
             return writer.toByteArray();
         } catch (Throwable e) {
-            LOG.error("Agent timer transform error", e);
+            LOG.error("Agent timer transform error, className {}, eMsg {}", className, e.getMessage(), e);
             throw e;
         }
     }

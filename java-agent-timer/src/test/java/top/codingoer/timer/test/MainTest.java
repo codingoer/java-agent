@@ -19,15 +19,14 @@ public class MainTest {
     private static final Logger logger = LoggerFactory.getLogger(MainTest.class);
 
     @Test
-    public void testApp()
-    {
+    public void testApp() {
         sleep("me");
         logger.warn("test OK!");
         assertTrue( true );
     }
 
     private void sleep(String who){
-        logger.info("who"+who);
+        logger.info("who ？" + who);
         try {
             TimeUnit.MILLISECONDS.sleep(200);
         } catch (InterruptedException e) {
